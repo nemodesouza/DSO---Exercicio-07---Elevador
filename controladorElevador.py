@@ -14,23 +14,14 @@ class ControladorElevador(AbstractControladorElevador):
 
 
   def subir(self) -> str:
-    try:
-      self.__elevador.subir()
-    except Exception as e:
-        print(e)
+    self.__elevador.subir()
 
   def descer(self) -> str:
-    try:
-      self.__elevador.descer()
-    except Exception as e:
-        print(e)
+    self.__elevador.descer()
   
   def entra_pessoa(self) -> str:
-    try:
-      self.__elevador.entra_pessoa()
-    except Exception as e:
-        print(e)
-
+    self.__elevador.entra_pessoa()
+    
   def sai_pessoa(self) -> str:
     try:
       self.__elevador.sai_pessoa()
